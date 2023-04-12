@@ -1,9 +1,11 @@
 <template>
-  <AddComponent />
-  <RemoveComponent />
-  <li v-for="component in getComponents" :key="component">
-    {{component}}
-  </li>
+  <div>
+    <AddComponent />
+    <RemoveComponent />
+    <li v-for="component in getComponents" :key="component">
+      {{component}}
+    </li>
+  </div>
 </template>
 
 <script lang="ts">

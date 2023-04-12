@@ -1,13 +1,12 @@
-
-
 <template>
-  <h1>{{framework.name}}</h1>
-  <InputComponent v-model:value="framework.name"/>
-  <div>Selected API: {{ selected }}</div>
-  <SelectComponent 
-    v-model:selectedValue="selected"
-    :options="framework.components"/>
-
+  <div>
+    <h1>{{framework.name}}</h1>
+    <InputComponent v-model="framework.name"/>
+    <div>Selected API: {{ selected }}</div>
+    <SelectComponent 
+      v-model="selected"
+      :options="framework.components"/>
+  </div>
 </template>
 
 <script lang="ts">

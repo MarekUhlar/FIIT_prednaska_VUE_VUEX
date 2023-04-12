@@ -10,7 +10,7 @@
 <script lang="ts">
 export default {
   props: {
-		selectedValue: {
+		modelValue: {
 			type: String,
 			required: true
 		},
@@ -21,7 +21,7 @@ export default {
   },
 	methods: {
     inputChanged(event) {
-      this.$emit("update:selectedValue", event.target.value);
+      this.$emit("update:modelValue", event.target.value);
     }
   }
 }

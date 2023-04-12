@@ -1,24 +1,26 @@
 
 <template>
-  <label >Framework Name</label><br>
-  <input 
-    type="text" 
-    :value="value"
-    @input="inputChanged"
-    :style="{ 'margin-bottom': 20 + 'px' }" ><br>
+  <div>
+    <label >Framework Name</label><br>
+    <input 
+      type="text" 
+      :value="modelValue"
+      @input="inputChanged"
+      :style="{ 'margin-bottom': 20 + 'px' }" ><br>
+  </div>
 </template>
 
 <script lang="ts">
 export default {
   props: {
-		value: {
+		modelValue: {
 			type: String,
 			required: true
 		}
   },
 	methods: {
     inputChanged(event) {
-      this.$emit("update:value", event.target.value);
+      this.$emit("update:modelValue", event.target.value);
     }
   }
 }
