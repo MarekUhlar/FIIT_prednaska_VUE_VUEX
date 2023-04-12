@@ -1,4 +1,4 @@
-# demo_1
+# vue_fundamentals
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -38,4 +38,3 @@ npm run dev
 ```sh
 npm run build
 ```
-# FIIT_prednaska_VUE_VUEX
